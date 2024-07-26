@@ -17,19 +17,19 @@ document.addEventListener('DOMContentLoaded', function() {
         let messages = [];
 
         // Step 5: Username Validation
-        if (usernameInput.length < 3) {
+        if (username.length < 3) {
             isValid = false;
             messages.push("Username must be at least 3 characters long.");
         }
 
         // Step 6: Email Validation
-        if (!emailInput.includes('@') || !emailInput.includes('.')) {
+        if (!email.includes('@') || !emailInput.includes('.')) {
             isValid = false;
             messages.push("Please enter a valid email address.");
         }
 
         // Step 7: Password Validation
-        if (passwordInput.length < 8) {
+        if (password.length < 8) {
             isValid = false;
             messages.push("Password must be at least 8 characters long.");
         }
